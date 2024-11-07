@@ -50,7 +50,7 @@ console.log('----------Esercizio 3----------');
 let int3 = 25;
 
 function crazyDiff(int3) {
-  if (int3 <= 19) {
+  if (int3 > 19) {
     sum = Math.abs(int3 - 19);
     return sum;
   } else {
