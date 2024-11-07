@@ -1,6 +1,7 @@
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
+console.log('----------Esercizio 1----------');
 
 let base = 11;
 let height = 12;
@@ -21,6 +22,7 @@ console.log("L'area del rettangolo è: ", area(base, height));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('----------Esercizio 2----------');
 
 let int1 = 5;
 let int2 = 5;
@@ -43,6 +45,7 @@ console.log(crazySum(int1, int2));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('----------Esercizio 3----------');
 
 let int3 = 25;
 
@@ -63,6 +66,10 @@ console.log(crazyDiff(int3));
  se n è uguale a 400.
 */
 
+/* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log('----------Esercizio 4----------');
+
 let n = 980;
 
 function boundary(n) {
@@ -75,13 +82,13 @@ function boundary(n) {
 
 console.log(boundary(n));
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
+
+console.log('----------Esercizio 5----------');
 
 let string = 'EPICODE';
 
@@ -104,6 +111,8 @@ console.log(epify(string));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log('----------Esercizio 6----------');
+
 let posNumber = 17;
 
 function check3and7(posNumber) {
@@ -124,6 +133,9 @@ console.log(check3and7(posNumber));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log('----------Esercizio 7----------');
+console.log(string);
+
 function reverseString(string) {
   string = string.split('').reverse().join('');
   return string;
@@ -140,15 +152,17 @@ console.log(reverseString(string));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log('----------Esercizio 8----------');
+
 let stringUpper = 'mi piacciono i treni';
+console.log(stringUpper);
 
 function upperFirst(stringUpper) {
   stringUpper = stringUpper.split(' ');
-  console.log(stringUpper);
+
   for (let i = 0; i < stringUpper.length; i++) {
     stringUpper[i] =
       stringUpper[i].charAt(0).toUpperCase() + stringUpper[i].slice(1);
-    console.log(stringUpper);
   }
   stringUpper = stringUpper.join(' ');
   return stringUpper;
@@ -161,8 +175,10 @@ console.log(upperFirst(stringUpper));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log('----------Esercizio 9----------');
 
 let trimString = 'Supercalifragilistichespiralidoso';
+console.log(trimString);
 
 function cutString(trimString) {
   trimString = trimString.slice(1, -1);
@@ -177,6 +193,8 @@ console.log(cutString(trimString));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+console.log('----------Esercizio 10----------');
+
 let n1 = 5;
 
 function giveMeRandom(n1) {
@@ -186,5 +204,5 @@ function giveMeRandom(n1) {
   }
   return nArray;
 }
-
+console.log('Array di numeri random:');
 console.log(giveMeRandom(n1));
