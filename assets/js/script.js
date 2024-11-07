@@ -70,7 +70,7 @@ console.log(crazyDiff(int3));
 
 console.log('----------Esercizio 4----------');
 
-let n = 980;
+let n = 80;
 
 function boundary(n) {
   if ((n > 20 && n < 100) || n === 400) {
@@ -79,7 +79,6 @@ function boundary(n) {
     return false;
   }
 }
-
 console.log(boundary(n));
 
 /* ESERCIZIO 5
@@ -94,6 +93,7 @@ let string = 'EPICODE';
 
 function epify(string) {
   if (string.startsWith('EPICODE')) {
+    //if(string.indexOf('EPICODE')===0)
     return string;
   } else {
     return 'EPICODE ' + string;
@@ -116,7 +116,7 @@ console.log('----------Esercizio 6----------');
 let posNumber = 17;
 
 function check3and7(posNumber) {
-  if (posNumber < 1) {
+  if (posNumber <= 1) {
     return 'Il numero è negativo';
   } else if (posNumber % 3 === 0 || posNumber % 7 === 0) {
     return 'Il numero ' + posNumber + ' È multiplo di 3 o di 7';
@@ -162,12 +162,31 @@ function upperFirst(stringUpper) {
 
   for (let i = 0; i < stringUpper.length; i++) {
     stringUpper[i] =
-      stringUpper[i].charAt(0).toUpperCase() + stringUpper[i].slice(1);
+      stringUpper[i].charAt(0).toUpperCase() +
+      stringUpper[i].slice(1).toLowerCase();
   }
   stringUpper = stringUpper.join(' ');
   return stringUpper;
 }
 console.log(upperFirst(stringUpper));
+
+/* OPPURE
+
+function upperFirst(str) {
+  let words = str.split(' ');
+  let result = [];
+  for (let i = 0; i < words.length; i++) {
+    let first = words[i].charAt(0);
+    let firstUpper = first.toUpperCase();
+    let cut = words[i].slice(1);
+    let final = firstUpper + cut;
+    result.push(final);
+  }
+  console.log(result.join(' '));
+}
+upperFirst('mi piacciono i treni');
+
+*/
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
