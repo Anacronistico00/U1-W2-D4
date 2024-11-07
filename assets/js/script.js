@@ -51,10 +51,10 @@ let int3 = 25;
 
 function crazyDiff(int3) {
   if (int3 > 19) {
-    sum = Math.abs(int3 - 19);
+    sum = Math.abs(int3 - 19) * 3;
     return sum;
   } else {
-    sum = Math.abs(int3 - 19) * 3;
+    sum = Math.abs(int3 - 19);
     return sum;
   }
 }
